@@ -13,8 +13,10 @@ export const Header = () => {
   const isDark = useAppSelector(selectTheme);
   if (isDark) {
     document.documentElement.classList.add("dark");
+     localStorage.setItem("isDarkMode", JSON.stringify(true));
   } else {
     document.documentElement.classList.remove("dark");
+     localStorage.setItem("isDarkMode", JSON.stringify(false));
   }
   return (
     <div className="flex place-content-between my-16">

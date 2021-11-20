@@ -6,8 +6,10 @@ export interface TogglerState {
   status: "idle" | "loading" | "failed";
 }
 
+const persistedIsDark = localStorage.getItem("isDarkMode");
+
 const initialState: TogglerState = {
-  value: false,
+  value: persistedIsDark ? JSON.parse(persistedIsDark) : false,
   status: "idle",
 };
 
