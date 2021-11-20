@@ -1,8 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styles from "./Paragraph.module.css";
-
-import { connect } from "react-redux";
 
 export const Paragraph = (/*props*/) => {
   return (
@@ -37,17 +34,3 @@ export const Paragraph = (/*props*/) => {
     </div>
   );
 };
-
-Paragraph.propTypes = {
-  props: PropTypes,
-};
-
-// const mapStateToProps = (state) => ({
-
-// })
-
-// const mapDispatchToProps = {
-
-// }
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Paragraph)

@@ -1,6 +1,5 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState, AppThunk } from "../../app/store";
-// import { fetchCount } from "./counterAPI";
+import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../../app/store";
 
 export interface TogglerState {
   value: boolean;

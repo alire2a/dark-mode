@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
 import { Input } from "./Input";
 import { Button } from "./Button";
 
@@ -16,13 +14,3 @@ export const Form = () => {
     </div>
   );
 };
-
-Form.propTypes = {
-  props: PropTypes,
-};
-
-// const mapStateToProps = state => ({});
-
-// const mapDispatchToProps = {};
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Form);

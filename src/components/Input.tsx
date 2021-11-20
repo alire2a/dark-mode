@@ -1,6 +1,4 @@
-import React, { ComponentProps } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import React from "react";
 
 type Props = {
   title: string;

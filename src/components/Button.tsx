@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
 
 type Props = {
   color: "primary" | "secendary";
@@ -21,6 +19,8 @@ export const Button = ({ title, color }: Props) => {
       break;
   }
   return (
-    <button className={`${colors} rounded-md px-14 py-2 mx-6 font-semibold`}>{title}</button>
+    <button className={`${colors} rounded-md px-14 py-2 mx-6 font-semibold`}>
+      {title}
+    </button>
   );
 };
